@@ -134,13 +134,13 @@ nav ul li a:hover {
 
 /* Encabezado principal */
 header {
-  background-color: white;
+  background-color: beige;
   height: 100px;
   display: flex;
   justify-content: center; 
   align-items: center;     
-  margin-right: 250px;     
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-right: 250px;
+  border-color: beige;     
 }
 
 /* Fin Encabezado principal */
@@ -166,11 +166,70 @@ main {
   text-orientation: sideways;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
+  background-color: white;
+  border-color: beige;
 }
 
+.img-fluid {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40vw;
+height: auto;
+border-radius: auto;
+transition: width 0.5s;
+}
+
+.img-fluid:active {
+  transform: scale(1.05);
+} 
+
+.img-fluid:hover {
+  width: 50vw;
+  height: auto;
+  transition: width 0.5s;
+}
 main li{
   list-style: none;
 }
+
+
+
+.img-tienda {
+  width: 20vw;
+  height: auto;
+  display: auto;
+  margin: 10px;
+  transition: width 0.5s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-tienda:hover {
+  width: 25vw;
+  height: auto;
+  transition: width 0.5s;
+}
+
+
+
+
+.img-galeria {
+  width: 20vw;
+  height: auto;
+  display: auto;
+  margin: 10px;
+  transition: width 0.5s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-galeria:hover {
+  width: 25vw;
+  height: auto;
+  transition: width 0.5s;
+}
+
 
 main .imagen-1 {
   width: 30vw;
@@ -178,7 +237,6 @@ main .imagen-1 {
   display: block;
   margin: 10px;
   transition: width 1s, height 1s;
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -203,7 +261,7 @@ main .Info {
 
 /*Footer*/
 footer {
-  background-color: #f0f0f0; 
+  background-color: beige; 
   color: black;
   font-family: 'Roboto', sans-serif;
   padding: 20px;
