@@ -1,4 +1,6 @@
-// Archivo header de SASS //
+@use 'variables' as *;
+@use 'mixins' as *;
+
 header {
   background-color: $color-bg-header;
   height: 100px;

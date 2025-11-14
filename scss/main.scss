@@ -1,0 +1,11 @@
+// Este es el archivo principal de SASS que importa todos los demás archivos parciales
+
+@use 'header';
+@use 'footer';
+@use 'base';
+@use 'sidebar';
+@use 'contacto';
+@use 'galeria';
+@use 'tienda';
+@use 'nosotros';
+
