@@ -1,0 +1,18 @@
+footer {
+  background-color: $color-bg-footer;
+  color: $color-text-footer;
+  font-family: $font-primary;
+  padding: 20px;
+  margin: 50px 0 50px 20px;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 280px;
+
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+  }
+}

@@ -1,0 +1,9 @@
+@mixin transition($props, $time: 0.5s, $ease: ease) {
+  transition: $props $time $ease;
+}
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

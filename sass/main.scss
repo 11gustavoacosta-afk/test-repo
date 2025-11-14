@@ -1,0 +1,16 @@
+// Este es el archivo principal de SASS que importa todos los demás archivos parciales
+
+
+@import 'variables';
+@import 'mixins';
+
+@import 'header';
+@import 'footer';
+@import 'main';
+@import 'sidebar';
+
+// Páginas
+@import 'contacto';
+@import 'galeria';
+@import 'tienda';
+@import 'nosotros';

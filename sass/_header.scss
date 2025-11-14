@@ -1,0 +1,17 @@
+// Archivo header de SASS //
+header {
+  background-color: $color-bg-header;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 250px;
+  border-color: $color-bg-header;
+
+  h1 {
+    color: black;
+    font-family: $font-title;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}

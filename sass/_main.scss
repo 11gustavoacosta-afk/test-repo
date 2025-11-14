@@ -1,0 +1,60 @@
+main {
+  margin-top: 20px;
+  padding: 20px;
+  margin-right: 250px;
+  font-family: $font-primary;
+  font-size: 20px;
+  background-color: $color-bg-main;
+  border-color: $color-bg-header;
+  text-justify: inter-word;
+  text-orientation: sideways;
+
+  li {
+    list-style: none;
+  }
+
+  .imagen-1 {
+    width: 30vw;
+    height: 30vh;
+    @include center-block;
+    margin: 10px;
+    @include transition(width 1s, height 1s);
+
+    &:hover {
+      width: 40vw;
+      height: 40vh;
+    }
+  }
+
+  .Info {
+    margin-right: 500px;
+  }
+}
+
+.img-fluid {
+  @include center-block;
+  width: 40vw;
+  height: auto;
+  border-radius: auto;
+  @include transition(width);
+
+  &:hover {
+    width: 50vw;
+  }
+
+  &:active {
+    transform: scale(1.05);
+  }
+}
+
+.img-tienda, .img-galeria {
+  @include center-block;
+  width: 20vw;
+  height: auto;
+  margin: 10px;
+  @include transition(width);
+
+  &:hover {
+    width: 25vw;
+  }
+}

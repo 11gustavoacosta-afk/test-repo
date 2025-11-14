@@ -1,0 +1,32 @@
+.tienda-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; // espacio entre elementos
+  padding: 20px;
+}
+
+.tienda-item {
+  text-align: center; // centra la imagen y el precio
+
+  .img-tienda {
+    width: 20vw;
+    height: auto;
+    @include center-block;
+    @include transition(width);
+
+    &:hover {
+      width: 25vw;
+    }
+  }
+
+  .precio {
+    margin-top: 10px;
+    font-family: $font-primary;
+    font-size: 18px;
+    font-weight: 500;
+    color: $color-text-main;
+  }
+}
+
+
