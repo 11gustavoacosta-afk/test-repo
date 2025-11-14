@@ -161,18 +161,23 @@ nav .logo:active {
 }
 
 .tienda-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 20px;
+}
+@media (max-width: 768px) {
+  .tienda-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .tienda-item {
   text-align: center;
 }
 .tienda-item .img-tienda {
-  width: 20vw;
+  width: 100%;
+  max-width: 200px;
   height: auto;
   display: block;
   margin-left: auto;
@@ -180,7 +185,7 @@ nav .logo:active {
   transition: width 0.5s ease;
 }
 .tienda-item .img-tienda:hover {
-  width: 25vw;
+  width: 110%;
 }
 .tienda-item .precio {
   margin-top: 10px;
