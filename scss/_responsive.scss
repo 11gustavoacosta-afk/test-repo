@@ -2,63 +2,41 @@
 
 @media (max-width: 768px) {
 
-  // Barra lateral ahora horizontal
   nav {
-    position: relative;   // ya no fija
+    position: static;
     width: 100%;
     height: auto;
+    min-height: auto;
+    right: auto;
+    left: auto;
+    padding: 0;
+    margin: 0;
+    background: $color-bg-header; // O tu color real
+    display: block;
+  }
+
+  nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 10px 0;
-    box-shadow: none;
-    margin: 0 0 20px 0;
-
-    ul {
-      flex-direction: row;
-      justify-content: space-around;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-
-      li {
-        margin: 0;
-        padding: 0;
-
-        a {
-          padding: 10px;
-          display: block;
-        }
-      }
-    }
-
-    .logo {
-      width: 20px;
-      height: 20px;
-      margin: 0 auto 10px auto;
-    }
-  }
-
-  // Header y Main sin margen fijo
-  header, main {
     margin: 0;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
   }
 
-  // Footer centrado y vertical
-  footer {
-    flex-direction: column;
-    text-align: center;
-    padding: 10px;
+  nav ul li {
+    margin: 0;
+    padding: 0;
   }
 
-  // Tienda: 1 columna
-  .tienda-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 10px;
+  nav ul li a {
+    padding: 12px 5px;
+    font-size: 14px;
   }
+
+  header {
+    margin-top: 0;
+    padding-top: 20px;
+    z-index: 1;
+  }
+
 }
