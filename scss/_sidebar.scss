@@ -51,4 +51,50 @@
     box-sizing: border-box;
   }
 }
+/* ============================
+   RESPONSIVE - MENÚ EN CELULAR
+   ============================ */
+
+@media (max-width: 768px) {
+
+  nav {
+    position: static;    
+    width: 100%;          
+    min-height: auto;
+    height: auto;
+    box-shadow: none;
+    display: block;
+    background: #222e3c;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  
+  .logo {
+    width: 70px !important;
+    height: 70px !important;
+    margin: 10px auto;
+  }
+
+
+  header,
+  main,
+  footer {
+    margin-right: 0 !important;
+  }
+}
 
