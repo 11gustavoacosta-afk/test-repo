@@ -35,9 +35,10 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5vh;
 
     li a {
-      padding: 12px;
+      padding: 15px;
       font-size: 18px;
       color: $color-text-nav;
       display: block;
