@@ -9,13 +9,9 @@
 
 .tienda-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); // desktop
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
   padding: 20px;
 
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr; // 1 columna en móvil
-  }
 }
 
 .tienda-item {
@@ -25,7 +21,6 @@
     width: 100%;
     max-width: 200px;
     height: auto;
-    @include center-block;
     @include transition(width);
 
     &:hover {

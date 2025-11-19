@@ -1,100 +1,70 @@
 /* Estilos para la barra lateral de navegación */
+@use 'variables' as *;
+@use 'mixins' as *;
 
-@media (max-width: 768px) {
 
   nav {
-    position: relative !important;   
-    width: 100% !important;
-    height: auto !important;
-    left: 0 !important;
+    position: 100% !important;   
+    width: 20% !important;
+    height: 100% !important;
+    left: 1 !important;
     top: 0 !important;
-    padding: 10px 0 !important;
-    background: #1f1f23 !important;
+    padding: 20px !important;
+    background: $color-sidebar-bg !important;
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
+    position: fixed;
+    right: 0;
 
-  nav .logo {
-    width: 80px !important;
-    height: 80px !important;
-    margin: 0 auto 10px auto !important;
-  }
 
-  nav ul {
-    width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    list-style: none;
-    text-align: center;
-  }
-
-  nav ul li {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  nav ul li a {
-    display: block !important;
-    padding: 12px 0 !important;
-    font-size: 18px !important;
-  }
-
- 
-  main,
-  header {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    width: 100% !important;
-    padding: 10px !important;
-    box-sizing: border-box;
-  }
-}
-/* ============================
-   RESPONSIVE - MENÚ EN CELULAR
-   ============================ */
-
-@media (max-width: 768px) {
-
-  nav {
-    position: static;    
-    width: 100%;          
-    min-height: auto;
-    height: auto;
-    box-shadow: none;
-    display: block;
-    background: #222e3c;
-  }
-
-  nav ul {
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px 0;
-  }
-
-  nav ul li {
-    margin: 0;
-    padding: 0;
-  }
-
-  nav ul li a {
-    padding: 10px;
-    font-size: 14px;
-  }
-
+   .logo {
+     width: 200px;
+     height: 200px;
+     margin-bottom: 10px;
+     border-radius: 40%;
+     object-fit: cover;
+     display: block;
+     margin: 20px auto 10px auto;
+     transition: width 0.5s, height 0.5s;
   
-  .logo {
-    width: 70px !important;
-    height: 70px !important;
-    margin: 10px auto;
+
+     &:hover {
+       width: 220px;
+       height: 220px;
+     }
+   }
+
+   ul {
+     width: 100% !important;
+     height: 100% !important;
+     padding: 0 !important;
+     margin: 0 !important;
+     list-style: none;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     li {
+       width: 100% !important;
+       height: auto;
+        margin: 0 !important;
+        padding: 0 !important;
+    
+       &:hover {
+         background: $color-nav-hover ;
+  
+       }
+    
+      a {
+       display: block !important;
+       padding: 12px !important;
+       font-size: 20px !important;
+       color: $color-text-nav !important;
+      }
+     }
+   }
   }
 
 
-  header,
-  main,
-  footer {
-    margin-right: 0 !important;
-  }
-}
 

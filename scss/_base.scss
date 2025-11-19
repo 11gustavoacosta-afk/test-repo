@@ -9,54 +9,57 @@
 main {
   margin-top: 20px;
   padding: 20px;
-  margin-right: 250px;
   font-family: $font-primary;
   font-size: 20px;
   background-color: $color-bg-main;
-  border-color: $color-bg-header;
   text-justify: inter-word;
   text-orientation: sideways;
 
   li {
-    list-style: none;
+  
+    list-style: disc;
+  }
+ img{
+    display: block;
+    margin-right: 40vw;
+    transition: width 0.5s, height 0.5s;
+ }
+  
+
+  .txt-choto {
+    margin-right: 500px ;
+    margin-left: 20px;
   }
 
-  .imagen-1 {
-    width: 30vw;
-    height: 30vh;
-    @include center-block;
-    margin: 10px;
-    @include transition(width 1s, height 1s);
-
-    &:hover {
-      width: 40vw;
-      height: 40vh;
-    }
-  }
-
-  .Info {
-    margin-right: 500px;
-  }
-}
 
 .img-fluid {
-  @include center-block;
-  width: 40vw;
-  height: auto;
-  border-radius: auto;
-  @include transition(width);
+   width: 40vw;
+     height: 47vh;
+     display: block;
+     margin: 10px;
+     transition: width 1s, height 1s;
+     margin-left: auto;
+     margin-right: 40%;
 
-  &:hover {
-    width: 50vw;
-  }
+
+    &:hover {
+      width: 50vw;
+      height: 57vh;
+    }
 
   &:active {
     transform: scale(1.05);
   }
 }
+.gallery {
+ @include center-block;
+ .producto-tienda {
+   @include flex-center;
+ }
+}
+
 
 .img-tienda, .img-galeria {
-  @include center-block;
   width: 20vw;
   height: auto;
   margin: 10px;
@@ -65,4 +68,5 @@ main {
   &:hover {
     width: 25vw;
   }
+}
 }

@@ -1,137 +1,113 @@
-
-
-
-
-
-
-
-
-
-
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/* Fin Reset */
-
-
-
-/* Fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
-
-/* Fin Fuentes */
-
-
-
-
-
-
-
-
-/* Barra lateral derecha fija */
-nav {
-  width: 250px;
-  min-height: 100vh;
-  background: #222e3c;
-  box-shadow: -2px 0 12px rgba(0,0,0,0.08);
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 1000;
+@charset "UTF-8";
+header {
+  background-color: beige;
+  height: 100px;
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  padding-top: 0;
+  justify-content: center;
+  align-items: center;
+  margin-right: 250px;
+  border-color: beige;
+}
+header h1 {
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
 }
 
-nav ul {
+footer {
+  background-color: beige;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  margin: 50px 0 50px 20px;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 20%;
   display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 24px 0;
-  margin: 0;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 280px;
 }
-
-nav ul li {
-  font-family: 'Roboto', "Times New Roman", Times, serif;
-  font-size: 18px;
-  margin: 8px 0;
-  padding: 0 12px;
-  border-radius: 8px;
-  color: #f0f0f0;
-}
-
-nav ul li a {
-  text-decoration: none;
+footer h2 {
   font-size: 18px;
   font-weight: 500;
-  color: #f5f7fa;
+  margin: 0;
+}
+
+main {
+  margin-top: 20px;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  background-color: white;
+  text-justify: inter-word;
+  text-orientation: sideways;
+}
+main li {
+  list-style: disc;
+}
+main img {
   display: block;
-  padding: 14px 24px;
-  border-radius: 6px;
-  width: 100%;
+  margin-right: 40vw;
+  transition: width 0.5s, height 0.5s;
 }
-
-
-
-.txt-choto {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+main .txt-choto {
+  margin-right: 500px;
   margin-left: 20px;
-  margin-right: 300px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: justify;
-  line-height: 1.6;
-  color: #333333;
+}
+main .img-fluid {
+  width: 40vw;
+  height: 47vh;
+  display: block;
+  margin: 10px;
+  transition: width 1s, height 1s;
+  margin-left: auto;
+  margin-right: 40%;
+}
+main .img-fluid:hover {
+  width: 50vw;
+  height: 57vh;
+}
+main .img-fluid:active {
+  transform: scale(1.05);
+}
+main .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+  margin-left: 0%;
+  margin-right: 20%;
+}
+main .gallery .producto-tienda {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .img-tienda, main .img-galeria {
+  width: 20vw;
+  height: auto;
+  margin: 10px;
+  transition: width 0.5s ease;
+}
+main .img-tienda:hover, main .img-galeria:hover {
+  width: 25vw;
 }
 
-
-.txt-choto1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  margin-left: 170px;
-  margin-right: 170px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: justify;
-  line-height: 1.6;
-  color: #333333;
+/* Estilos para la barra lateral de navegación */
+nav {
+  position: 100% !important;
+  width: 20% !important;
+  height: 100% !important;
+  left: 1 !important;
+  top: 0 !important;
+  padding: 20px !important;
+  background: #222e3c !important;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
 }
-
-
-
-.sidebar .nav-link {
-  color: #ffffff;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-.sidebar .nav-link:active {
-  transform: scale(1.2);
-  border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-  
-.sidebar .nav-link:hover {
-  text-size-adjust: initial;
-  background: linear-gradient(90deg, #2d3a4d 0%, #3a4a63 100%);
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  text-shadow: 0 1px 2px rgba(0,0,0,0.03);
-}
-
-nav ul li a:hover {
-  background: linear-gradient(90deg, #2d3a4d 0%, #3a4a63 100%);
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  text-shadow: 0 1px 2px rgba(0,0,0,0.03);
-}
-
-.logo {
+nav .logo {
   width: 200px;
   height: 200px;
   margin-bottom: 10px;
@@ -141,230 +117,61 @@ nav ul li a:hover {
   margin: 20px auto 10px auto;
   transition: width 0.5s, height 0.5s;
 }
-
-.logo:active {
-  transform: scale(0.95);
+nav .logo:hover {
+  width: 220px;
+  height: 220px;
 }
-.logo:hover {
- width: 180px;
-  height: 180px;
-  transition: width 0.5s, height 0.5s;
-}
-/* Fin barra lateral derecha fija */
-
-
-
-
-
-
-
-
-
-
-/* Encabezado principal */
-header {
-  background-color: beige;
-  height: 100px;
-  display: flex;
-  justify-content: center; 
-  align-items: center;     
-  margin-right: 250px;
-  border-color: beige;     
-}
-
-/* Fin Encabezado principal */
-
-
-
-
-/* Título */
-header h1 {
-  color: black;
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-/* Fin Título */
-
-/* Contenido principal */
-main {
-  margin-top: 20px;
-  padding: 20px;
-  margin-right: 250px;
-  text-justify: inter-word;
-  text-orientation: sideways;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  background-color: white;
-  border-color: beige;
-}
-
-.img-fluid {
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 40vw;
-height: auto;
-border-radius: auto;
-transition: width 0.5s;
-}
-
-.img-fluid:active {
-  transform: scale(1.05);
-} 
-
-.img-fluid:hover {
-  width: 50vw;
-  height: auto;
-  transition: width 0.5s;
-}
-main li{
+nav ul {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
   list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-
-
-.img-tienda {
-  width: 20vw;
+nav ul li {
+  width: 100% !important;
   height: auto;
-  display: auto;
-  margin: 10px;
-  transition: width 0.5s;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+nav ul li:hover {
+  background: linear-gradient(90deg, #2d3a4d 0%, #3a4a63 100%);
+}
+nav ul li a {
+  display: block !important;
+  padding: 12px !important;
+  font-size: 20px !important;
+  color: #f5f7fa !important;
 }
 
-.img-tienda:hover {
-  width: 25vw;
-  height: auto;
-  transition: width 0.5s;
-}
-
-
-
-
-.img-galeria {
-  width: 20vw;
-  height: auto;
-  display: auto;
-  margin: 10px;
-  transition: width 0.5s;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.img-galeria:hover {
-  width: 25vw;
-  height: auto;
-  transition: width 0.5s;
-}
-
-
-main .imagen-1 {
-  width: 30vw;
-  height: 30vh;
-  display: block;
-  margin: 10px;
-  transition: width 1s, height 1s;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-main .imagen-1:hover {
-  width: 40vw;
-  height: 40vh;
-  transition: width 1s, height 1s;
-}
-
-main .Info {
-  margin-right: 500px;
-}
-/* Fin Contenido principal */
-
-
-
-
-
-
-
-
-/*Footer*/
-footer {
-  background-color: beige; 
-  color: black;
-  font-family: 'Roboto', sans-serif;
+.tienda-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   padding: 20px;
-  margin: 50px 0 50px 20px; 
-  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
-
-  display: flex;                 
-  justify-content: space-between;
-  align-items: center;           
-  padding-right: 280px;          
 }
 
-footer h2 {
+.tienda-item {
+  text-align: center;
+}
+.tienda-item .img-tienda {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  transition: width 0.5s ease;
+}
+.tienda-item .img-tienda:hover {
+  width: 110%;
+}
+.tienda-item .precio {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  margin: 0;
+  color: #333333;
 }
 
-
-
-
-
-
-/*Fin Footer*/
-
-
-
-
-
-
-
-
-/* Estilos 600px media */
-@media (max-width: 600px) {
-  nav {
-    width: 100%;
-    min-height: unset;
-    height: auto;
-    position: static;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
-  nav ul {
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-  }
-  nav ul li {
-    margin: 0 10px;
-    padding: 0;
-  }
-  nav ul li a {
-    padding: 14px 10px;
-    text-align: center;
-    width: auto;
-  }
-  nav img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 0;
-    margin-top: 10px;
-    border-radius: 40%;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/* Fin Estilos 600px media */
+/*# sourceMappingURL=style.css.map */

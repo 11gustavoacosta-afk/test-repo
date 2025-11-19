@@ -1,42 +1,130 @@
-// En _responsive.scss o al final de _main.scss
+// Responsive exclusivamente para móvil (sin reescribir estilos desktop)
+// Buenas prácticas: solo overrides, nada de !important innecesario,
+// mobile <= 768px
 
 @media (max-width: 768px) {
 
-  nav {
-    position: static;
-    width: 100%;
-    height: auto;
-    min-height: auto;
-    right: auto;
-    left: auto;
-    padding: 0;
-    margin: 0;
-    background: $color-bg-header; // O tu color real
-    display: block;
+  /* ---------------------- HEADER ---------------------- */
+  header {
+    height: 70px;
+    margin-right: 0;
+
+    h1 {
+      font-size: 20px;
+      text-align: center;
+    }
   }
 
-  nav ul {
+  /* ---------------------- SIDEBAR -> NAV HORIZONTAL ---------------------- */
+  nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 10px 0;
-    margin: 0;
+    align-items: center;
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin: 0;
+
+      &:hover {
+        width: 90px;
+        height: 90px;
+      }
+    }
+
+    ul {
+      flex-direction: row;
+      align-items: center;
+      width: auto;
+
+      li a {
+        padding: 8px;
+        font-size: 14px;
+      }
+    }
   }
 
-  nav ul li {
-    margin: 0;
-    padding: 0;
+  /* ---------------------- MAIN ---------------------- */
+  main {
+    padding: 10px;
+    font-size: 16px;
+
+    img {
+      margin-right: 0;
+      width: 90vw;
+      height: auto;
+    }
+
+    .img-fluid {
+      width: 90vw;
+      height: auto;
+      margin: 10px auto;
+
+      &:hover {
+        width: 95vw;
+        height: auto;
+      }
+    }
+
+    .txt-choto {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    /* Galería */
+    .gallery {
+      grid-template-columns: 1fr;
+      margin-right: 0;
+
+      .producto-tienda {
+        flex-direction: column;
+      }
+    }
+
+    .img-tienda,
+    .img-galeria {
+      width: 70vw;
+
+      &:hover {
+        width: 80vw;
+      }
+    }
   }
 
-  nav ul li a {
-    padding: 12px 5px;
-    font-size: 14px;
+  /* ---------------------- TIENDA ---------------------- */
+  .tienda-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
   }
 
-  header {
-    margin-top: 0;
-    padding-top: 20px;
-    z-index: 1;
+  .tienda-item {
+    .img-tienda {
+      max-width: 150px;
+    }
+
+    .precio {
+      font-size: 16px;
+    }
   }
 
+  /* ---------------------- FOOTER ---------------------- */
+  footer {
+    margin: 20px 0;
+    padding: 15px;
+    margin-right: 0;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 0;
+
+    h2 {
+      font-size: 16px;
+    }
+  }
 }
