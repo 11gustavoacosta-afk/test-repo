@@ -22,7 +22,7 @@ nav {
   top: 0;
   left: 0;  
   width: 100%;
-  height: auto; 
+  height: 10%; 
   padding: 10px;
 
   display: flex; 
@@ -35,7 +35,7 @@ nav {
   .logo {
     width: 60px;
     height: 60px;
-    margin: 0 10px 0 0;
+    margin:auto;
   }
 
   ul {
@@ -50,7 +50,7 @@ nav {
     li {
       a {
         padding: 8px;
-        font-size: 14px;
+        font-size: auto;
       }
     }
   }
@@ -58,7 +58,6 @@ nav {
 
   /* ---------------------- MAIN ---------------------- */
   main {
-    margin: 0;
     padding: 15px;
     font-size: 16px;
     margin-top: 20px;
