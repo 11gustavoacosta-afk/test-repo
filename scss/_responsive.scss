@@ -1,3 +1,5 @@
+@use 'variables' as *;
+@use 'mixins' as *;
 
 
 @media (max-width: 768px) {
@@ -6,55 +8,56 @@
   header {
     height: 70px;
     margin-right: 0;
-
+    margin-top: 90px;
     h1 {
       font-size: 20px;
       text-align: center;
+      
     }
   }
 
   /* ---------------------- SIDEBAR -> NAV HORIZONTAL ---------------------- */
-  nav {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;  
+  width: 100%;
+  height: auto !important; 
+  padding: 10px;
 
-    .logo {
-      width: 80px;
-      height: 80px;
-      margin: 0;
+  display: flex !important; 
+  flex-direction: row !important; 
+  justify-content: space-between;
+  align-items: center;
 
-      &:hover {
-        width: 90px;
-        height: 90px;
-      }
-    }
+  background: $color-sidebar-bg; 
+  z-index: 9999; 
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px 0 0;
+  }
 
-    ul {
-      flex-direction: row;
-      align-items: center;
-      width: auto;
+  ul {
+    width: auto !important;
+    flex-direction: row !important;
+    gap: 10px;
 
-      li a {
+    li {
+      a {
         padding: 8px;
         font-size: 14px;
       }
     }
   }
+}
 
   /* ---------------------- MAIN ---------------------- */
   main {
     margin: 0;
     padding: 15px;
     font-size: 16px;
-
+    margin-top: 20px;
     img {
       margin-right: 10px auto;
       width: 90vw;
