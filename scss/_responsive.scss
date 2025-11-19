@@ -53,11 +53,12 @@
 
   /* ---------------------- MAIN ---------------------- */
   main {
-    padding: 10px;
+    margin: 0;
+    padding: 15px;
     font-size: 16px;
 
     img {
-      margin-right: 0;
+      margin-right: 10px auto;
       width: 90vw;
       height: auto;
     }
