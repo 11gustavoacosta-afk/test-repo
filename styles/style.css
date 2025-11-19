@@ -186,10 +186,10 @@ nav ul li:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto !important;
+    height: auto;
     padding: 10px;
-    display: flex !important;
-    flex-direction: row !important;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background: #222e3c;
@@ -201,9 +201,13 @@ nav ul li:hover {
     margin: 0 10px 0 0;
   }
   nav ul {
-    width: auto !important;
-    flex-direction: row !important;
+    width: auto;
+    flex-direction: row;
     gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   nav ul li a {
     padding: 8px;

@@ -22,11 +22,11 @@ nav {
   top: 0;
   left: 0;  
   width: 100%;
-  height: auto !important; 
+  height: auto; 
   padding: 10px;
 
-  display: flex !important; 
-  flex-direction: row !important; 
+  display: flex; 
+  flex-direction: row; 
   justify-content: space-between;
   align-items: center;
 
@@ -39,9 +39,13 @@ nav {
   }
 
   ul {
-    width: auto !important;
-    flex-direction: row !important;
-    gap: 10px;
+      width: auto;
+      flex-direction: row;
+      gap: 10px;
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between;
+      align-items: center;
 
     li {
       a {
