@@ -187,9 +187,13 @@ nav ul li:hover {
     left: 0;
     width: 100%;
     height: auto;
-    padding: 12px 15px;
     background: #222e3c;
+    padding: 10px 15px;
     z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
   nav .logo {
     width: 55px;
@@ -197,22 +201,26 @@ nav ul li:hover {
     margin: 0;
   }
   nav ul {
-    display: flex;
-    flex-direction: row;
+    display: flex !important;
+    flex-direction: row !important;
     gap: 15px;
-    justify-content: center;
     align-items: center;
-    margin: 10px 0;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    list-style: none;
   }
   nav ul li a {
     padding: 6px 8px;
     font-size: 14px;
+    white-space: nowrap;
   }
   /* ---------------------- MAIN ---------------------- */
   main {
     padding: 15px;
     font-size: 16px;
-    margin-top: 110px;
+    margin-top: 90px;
   }
   main img {
     margin-right: 10px auto;
