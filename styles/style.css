@@ -216,6 +216,23 @@ nav ul li:hover {
     padding: 4px 6px;
     white-space: nowrap;
   }
+  nav, nav * {
+    height: auto !important;
+    max-height: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  nav ul {
+    flex-direction: row !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  nav li {
+    height: auto !important;
+  }
   /* ---------------------- MAIN ---------------------- */
   main {
     padding: 15px;
