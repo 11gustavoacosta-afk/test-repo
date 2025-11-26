@@ -172,9 +172,8 @@ nav ul li:hover {
 @media (max-width: 768px) {
   /* ---------------------- HEADER ---------------------- */
   header {
-    height: 70px;
     margin-right: 0;
-    margin-top: 90px;
+    margin-top: 120px;
   }
   header h1 {
     font-size: 20px;
@@ -182,31 +181,17 @@ nav ul li:hover {
   }
   /* ---------------------- SIDEBAR -> NAV HORIZONTAL ---------------------- */
   nav {
-    position: fixed;
-    top: 0;
-    left: 0;
+    flex-direction: row;
     width: 100%;
-    height: auto;
-    background: #222e3c;
-    z-index: 9999;
+    height: 120px;
     padding: 8px 12px;
-    /* RESETEA EL LAYOUT DEL SIDEBAR */
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
   }
   nav .logo {
     width: 50px;
     height: 50px;
-    margin: 0;
   }
   nav ul {
-    display: flex !important;
-    flex-direction: row !important;
-    gap: 12px;
-    margin: 0;
-    padding: 0;
+    gap: 10px;
   }
   nav ul li {
     list-style: none;
@@ -216,33 +201,12 @@ nav ul li:hover {
     padding: 4px 6px;
     white-space: nowrap;
   }
-  nav, nav * {
-    height: auto !important;
-    max-height: none !important;
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-  }
-  nav ul {
-    flex-direction: row !important;
-    height: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  nav li {
-    height: auto !important;
-  }
   /* ---------------------- MAIN ---------------------- */
   main {
-    padding: 15px;
     font-size: 16px;
-    margin-top: 80px;
   }
   main img {
-    margin-right: 10px auto;
-    width: 90vw;
-    height: auto;
+    margin-right: auto;
   }
   main .img-fluid {
     width: 90vw;
@@ -288,9 +252,7 @@ nav ul li:hover {
   }
   /* ---------------------- FOOTER ---------------------- */
   footer {
-    margin: 20px 0;
-    padding: 15px;
-    margin-right: 0;
+    margin: 0;
     flex-direction: column;
     text-align: center;
     padding-right: 0;

@@ -6,9 +6,8 @@
 
   /* ---------------------- HEADER ---------------------- */
   header {
-    height: 70px;
     margin-right: 0;
-    margin-top: 90px;
+    margin-top: 120px;
     h1 {
       font-size: 20px;
       text-align: center;
@@ -18,35 +17,18 @@
 
   /* ---------------------- SIDEBAR -> NAV HORIZONTAL ---------------------- */
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
+  flex-direction: row;
   width: 100%;
-  height: auto;
-  background: $color-sidebar-bg;
-  z-index: 9999;
-
+  height: 120px;
   padding: 8px 12px;
-
-  /* RESETEA EL LAYOUT DEL SIDEBAR */
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-
+  
   .logo {
     width: 50px;
     height: 50px;
-    margin: 0;
   }
 
   ul {
-    display: flex !important;
-    flex-direction: row !important;
-    gap: 12px;
-    margin: 0;
-    padding: 0;
-
+    gap: 10px;
     li {
       list-style: none;
 
@@ -58,38 +40,12 @@ nav {
     }
   }
 }
-nav, nav * {
-  height: auto !important;
-  max-height: none !important;
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-}
-
-nav ul {
-  flex-direction: row !important;
-  height: auto !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-nav li {
-  height: auto !important;
-}
-
-
-
 
   /* ---------------------- MAIN ---------------------- */
   main {
-    padding: 15px;
     font-size: 16px;
-    margin-top: 80px;
     img {
-      margin-right: 10px auto;
-      width: 90vw;
-      height: auto;
+      margin-right: auto;
     }
 
     .img-fluid {
@@ -146,9 +102,7 @@ nav li {
 
   /* ---------------------- FOOTER ---------------------- */
   footer {
-    margin: 20px 0;
-    padding: 15px;
-    margin-right: 0;
+    margin:0;
     flex-direction: column;
     text-align: center;
     padding-right: 0;
