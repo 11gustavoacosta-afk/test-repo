@@ -16,16 +16,28 @@
 
 .tienda-item {
   text-align: center;
-
+   
+  .producto-tienda {
+    @include gallery-and-shop-cards;
+    flex-direction: column;
+    margin: 15px;
+  }  
+  
   .img-tienda {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
+    width: 20vw;
+    height: 20vh;
     @include transition(width);
-
+    
     &:hover {
-      width: 110%;
+      width: 25vw;
     }
+  }
+  .nombre-producto {
+    margin-top: 10px;
+    font-family: $font-primary;
+    font-size: 20px;
+    font-weight: 600;
+    color: $color-text-main;
   }
 
   .precio {
@@ -34,6 +46,7 @@
     font-size: 18px;
     font-weight: 500;
     color: $color-text-main;
+    align-items: center;
   }
 }
 

@@ -1,3 +1,16 @@
 // Archivo galeria de SASS //
 @use 'variables' as *;
 @use 'mixins' as *;
+
+main{
+    .img-galeria {
+      width: 20vw;
+      height: 20vh;
+      margin: 10px;
+      @include transition(width);
+
+      &:hover {
+        width: 25vw;
+      }
+}
+}

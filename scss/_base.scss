@@ -8,15 +8,14 @@ body{
   margin:0;
   padding:0;
   overflow-x:hidden;
+  background-color: beige;
 }
 
 main {
-  margin-top: 20px;
   padding: 20px;
   font-family: $font-primary;
   font-size: 20px;
   background-color: $color-bg-main;
-  text-justify: inter-word;
   text-orientation: sideways;
 
   li {
@@ -62,15 +61,15 @@ main {
  }
 }
 
-
+.producto-tienda{
+  border: 2px solid black;
+  border-radius: 25px;
+  align-items: center;
+}
 .img-tienda, .img-galeria {
   width: 20vw;
-  height: auto;
+  height: 20vh;
   margin: 10px;
-  @include transition(width);
 
-  &:hover {
-    width: 25vw;
-  }
 }
 }

@@ -1,12 +1,10 @@
 @charset "UTF-8";
 header {
-  background-color: beige;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 250px;
-  border-color: beige;
 }
 header h1 {
   color: black;
@@ -17,16 +15,27 @@ header h1 {
 
 footer {
   background-color: beige;
-  color: black;
-  font-family: "Roboto", sans-serif;
   padding: 20px;
-  margin: 50px 0 50px 20px;
-  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
   margin-right: 20%;
+  list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 280px;
+  flex-direction: row;
+}
+footer p {
+  margin-top: 30px;
+  margin-left: 5px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+footer ul {
+  margin-left: 210px;
+}
+footer .img-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  width: 80px;
+  height: auto;
+  right: 50px;
 }
 footer h2 {
   font-size: 18px;
@@ -38,15 +47,14 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: beige;
 }
 
 main {
-  margin-top: 20px;
   padding: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   background-color: white;
-  text-justify: inter-word;
   text-orientation: sideways;
 }
 main li {
@@ -84,19 +92,15 @@ main .gallery {
   margin-left: 0%;
   margin-right: 20%;
 }
-main .gallery .producto-tienda {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+main .producto-tienda {
+  border: 2px solid black;
+  border-radius: 25px;
+  align-items: center;
 }
 main .img-tienda, main .img-galeria {
   width: 20vw;
-  height: auto;
+  height: 20vh;
   margin: 10px;
-  transition: width 0.5s ease;
-}
-main .img-tienda:hover, main .img-galeria:hover {
-  width: 25vw;
 }
 
 /* Estilos para la barra lateral de navegación */
@@ -143,6 +147,16 @@ nav ul li:hover {
   background: linear-gradient(90deg, #2d3a4d 0%, #3a4a63 100%);
 }
 
+main .img-galeria {
+  width: 20vw;
+  height: 20vh;
+  margin: 10px;
+  transition: width 0.5s ease;
+}
+main .img-galeria:hover {
+  width: 25vw;
+}
+
 .tienda-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -152,14 +166,31 @@ nav ul li:hover {
 .tienda-item {
   text-align: center;
 }
+.tienda-item .producto-tienda {
+  padding: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 15px;
+}
 .tienda-item .img-tienda {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
+  width: 20vw;
+  height: 20vh;
   transition: width 0.5s ease;
 }
 .tienda-item .img-tienda:hover {
-  width: 110%;
+  width: 25vw;
+}
+.tienda-item .nombre-producto {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
 }
 .tienda-item .precio {
   margin-top: 10px;
@@ -167,6 +198,7 @@ nav ul li:hover {
   font-size: 18px;
   font-weight: 500;
   color: #333333;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -259,6 +291,11 @@ nav ul li:hover {
   }
   footer h2 {
     font-size: 16px;
+  }
+  footer ul {
+    list-style: none;
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
 
