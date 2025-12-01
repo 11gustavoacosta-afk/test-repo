@@ -2,15 +2,15 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
+
+.galeria-pag{
 main{
     .img-galeria {
       width: 20vw;
-      height: 20vh;
+      height: 30vh;
       margin: 10px;
       @include transition(width);
-
-      &:hover {
-        width: 25vw;
-      }
 }
 }
+}
+      

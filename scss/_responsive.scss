@@ -85,6 +85,7 @@ nav {
   }
 
   /* ---------------------- TIENDA ---------------------- */
+  .tienda-pag{
   .tienda-container {
     grid-template-columns: 1fr;
     padding: 10px;
@@ -99,6 +100,31 @@ nav {
       font-size: 16px;
     }
   }
+  }
+  /* ---------------------- GALERIA ---------------------- */
+  .galeria-pag{
+  main{ 
+    .img-galeria {
+      width: 70vw;
+      height: auto;
+    }
+  }
+  }
+
+ /* ---------------------- NOSOTROS ---------------------- */
+
+
+
+
+
+
+ /* ---------------------- CONTACTO ---------------------- */
+
+
+
+
+
+
 
   /* ---------------------- FOOTER ---------------------- */
   footer {

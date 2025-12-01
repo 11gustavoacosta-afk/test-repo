@@ -5,15 +5,7 @@
 
 
 
-
-
-.tienda-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 20px;
-
-}
-
+.tienda-pag{
 .tienda-item {
   text-align: center;
    
@@ -25,7 +17,7 @@
   
   .img-tienda {
     width: 20vw;
-    height: 20vh;
+    height: 30vh;
     @include transition(width);
     
     &:hover {
@@ -49,4 +41,4 @@
     align-items: center;
   }
 }
-
+}

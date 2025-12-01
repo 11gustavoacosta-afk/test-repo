@@ -36,6 +36,15 @@ footer .img-whatsapp {
   width: 80px;
   height: auto;
   right: 50px;
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 footer h2 {
   font-size: 18px;
@@ -70,7 +79,7 @@ main .txt-choto {
   margin-left: 20px;
 }
 main .img-fluid {
-  width: 40vw;
+  width: 37vw;
   height: 47vh;
   display: block;
   margin: 10px;
@@ -79,7 +88,7 @@ main .img-fluid {
   margin-right: 40%;
 }
 main .img-fluid:hover {
-  width: 50vw;
+  width: 47vw;
   height: 57vh;
 }
 main .img-fluid:active {
@@ -99,7 +108,7 @@ main .producto-tienda {
 }
 main .img-tienda, main .img-galeria {
   width: 20vw;
-  height: 20vh;
+  height: 30vh;
   margin: 10px;
 }
 
@@ -147,26 +156,46 @@ nav ul li:hover {
   background: linear-gradient(90deg, #2d3a4d 0%, #3a4a63 100%);
 }
 
-main .img-galeria {
+.contacto-pag main div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  color: #333333;
+}
+.contacto-pag main div section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contacto-pag main div .enviar {
+  background-color: transparent;
+  color: black;
+}
+.contacto-pag main div .enviar:hover {
+  background-color: mediumblue;
+  color: red;
+}
+.contacto-pag main div .reiniciar {
+  background-color: transparent;
+  color: black;
+}
+.contacto-pag main div .reiniciar:hover {
+  background-color: red;
+  color: mediumblue;
+}
+
+.galeria-pag main .img-galeria {
   width: 20vw;
-  height: 20vh;
+  height: 30vh;
   margin: 10px;
   transition: width 0.5s ease;
 }
-main .img-galeria:hover {
-  width: 25vw;
-}
 
-.tienda-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 20px;
-}
-
-.tienda-item {
+.tienda-pag .tienda-item {
   text-align: center;
 }
-.tienda-item .producto-tienda {
+.tienda-pag .tienda-item .producto-tienda {
   padding: 10px;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 25px;
@@ -177,22 +206,22 @@ main .img-galeria:hover {
   flex-direction: column;
   margin: 15px;
 }
-.tienda-item .img-tienda {
+.tienda-pag .tienda-item .img-tienda {
   width: 20vw;
-  height: 20vh;
+  height: 30vh;
   transition: width 0.5s ease;
 }
-.tienda-item .img-tienda:hover {
+.tienda-pag .tienda-item .img-tienda:hover {
   width: 25vw;
 }
-.tienda-item .nombre-producto {
+.tienda-pag .tienda-item .nombre-producto {
   margin-top: 10px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #333333;
 }
-.tienda-item .precio {
+.tienda-pag .tienda-item .precio {
   margin-top: 10px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -272,16 +301,23 @@ main .img-galeria:hover {
     width: 80vw;
   }
   /* ---------------------- TIENDA ---------------------- */
-  .tienda-container {
+  .tienda-pag .tienda-container {
     grid-template-columns: 1fr;
     padding: 10px;
   }
-  .tienda-item .img-tienda {
+  .tienda-pag .tienda-item .img-tienda {
     max-width: 150px;
   }
-  .tienda-item .precio {
+  .tienda-pag .tienda-item .precio {
     font-size: 16px;
   }
+  /* ---------------------- GALERIA ---------------------- */
+  .galeria-pag main .img-galeria {
+    width: 70vw;
+    height: auto;
+  }
+  /* ---------------------- NOSOTROS ---------------------- */
+  /* ---------------------- CONTACTO ---------------------- */
   /* ---------------------- FOOTER ---------------------- */
   footer {
     margin: 0;

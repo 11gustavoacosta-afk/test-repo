@@ -1,5 +1,5 @@
-sass scss/main.scss styles/style.css
-sass --watch scss/main.scss:styles/style.css
+sass scss/style.scss styles/style.css
+sass --watch scss/style.scss:styles/style.css
 git add .
 git commit -m "X"
 git push
