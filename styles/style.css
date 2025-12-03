@@ -229,6 +229,15 @@ nav ul li:hover {
   align-items: center;
 }
 
+.nosotros-pag main .img-nos {
+  height: 47vh;
+  margin: 10px;
+  margin-right: 40%;
+}
+.nosotros-pag main .img-nos:active {
+  transform: scale(0.95);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -249,7 +258,6 @@ main li {
 main img {
   display: block;
   margin-right: 40vw;
-  transition: width 0.5s, height 0.5s;
 }
 main .txt-choto {
   margin-right: 500px;
@@ -380,6 +388,11 @@ main .img-tienda, main .img-galeria {
     height: auto;
   }
   /* ---------------------- NOSOTROS ---------------------- */
+  .nosotros-pag main .img-nos {
+    width: 90vw;
+    height: auto;
+    margin: 10px auto;
+  }
   /* ---------------------- CONTACTO ---------------------- */
   .contacto-pag main div {
     width: 90%;
