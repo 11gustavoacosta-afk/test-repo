@@ -394,6 +394,10 @@ nav ul li:hover {
     width: 70vw;
     height: auto;
   }
+  .galeria-pag main inframe {
+    width: 70%;
+    height: auto;
+  }
   /* ---------------------- NOSOTROS ---------------------- */
   .nosotros-pag main .img-nos {
     width: 90vw;
