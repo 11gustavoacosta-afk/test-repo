@@ -7,6 +7,7 @@
 
 .tienda-pag{
  main{
+  background-color: transparent;
   .txt{
     margin-right: 20%;
     font-family: $font-tienda;
@@ -19,10 +20,6 @@
    padding: 12px 18px;
    border-radius: 8px;
    /*Solo visual, no funciona realmente*/
-  }
-  div{
-    margin-top: 100px;
-    margin-bottom: 100px;
   }
   h3.envios-tienda{
     font-family: $font-primary;
@@ -41,7 +38,7 @@
     gap: 20px;
     margin-top: 20px;
     margin-right: 20%;
-  
+    background-color: #fff;
   li{
     list-style: none;
     margin: 0px;
@@ -62,39 +59,49 @@
   }
 }
 }
-.tienda-item {
-  text-align: center;
-   
-  .producto-tienda {
-    @include gallery-and-shop-cards;
-    flex-direction: column;
-    margin: 15px;
-  }  
-  
-  .img-tienda {
-    width: 20vw;
-    height: 30vh;
-    @include transition(width);
-    
-    &:hover {
-      width: 25vw;
-    }
-  }
-  .nombre-producto {
-    margin-top: 10px;
-    font-family: $font-primary;
-    font-size: 20px;
-    font-weight: 600;
-    color: $color-text-main;
-  }
 
-  .precio {
-    margin-top: 10px;
-    font-family: $font-primary;
-    font-size: 18px;
-    font-weight: 500;
-    color: $color-text-main;
+.gallery-tienda-elements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+    padding: 20px;
+
+
+
+.producto-tienda {
+    display: flex;
+    flex-direction: column; /* Imagen arriba, textos abajo */
     align-items: center;
-  }
+    width: 200px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+
+
+.img-tienda {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.nombre-producto {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+.precio {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #6a3e2e;
+}
+}
 }
 }

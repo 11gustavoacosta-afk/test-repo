@@ -53,22 +53,22 @@ main {
     transform: scale(1.05);
   }
 }
-.gallery {
+.gallery-tienda-elements {
  @include center-block;
  .producto-tienda {
    @include flex-center;
  }
-}
+
 
 .producto-tienda{
   border: 2px solid black;
   border-radius: 25px;
   align-items: center;
 }
-.img-tienda, .img-galeria {
-  width: 20vw;
+img {
   height: 30vh;
   margin: 10px;
 
+}
 }
 }

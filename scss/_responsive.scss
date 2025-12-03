@@ -2,7 +2,7 @@
 @use 'mixins' as *;
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
   /* ---------------------- HEADER ---------------------- */
   header {
@@ -64,17 +64,15 @@ nav {
       margin-left: 0;
     }
 
-    /* Galería */
-    .gallery {
+    .gallery-tienda-elements {
       grid-template-columns: 1fr;
       margin-right: 0;
 
       .producto-tienda {
         flex-direction: column;
       }
-    }
+    
 
-    .img-tienda,
     .img-galeria {
       width: 70vw;
 
@@ -82,14 +80,17 @@ nav {
         width: 80vw;
       }
     }
-  }
-
+   }
+}
   /* ---------------------- TIENDA ---------------------- */
   .tienda-pag{
   main{
     .menu-completo{
      margin-left: 0;
      width: 90%;
+    }
+    .txt{
+      margin-right: 0;
     }
   }
   .tienda-container {
@@ -135,9 +136,15 @@ nav {
  /* ---------------------- CONTACTO ---------------------- */
   .contacto-pag{
   main{
-    div{
+    margin-right: 0;
+    margin-left: 0;
+    .txt{
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .form{
       width: 90%;
-      margin-left: auto;
+      margin-left: 1px;
       margin-right: auto;
     }
   }
