@@ -28,18 +28,27 @@ footer {
     width: 80px;
     height: auto;
     right: 50px;
-      animation: bounce 1s infinite;
-      }
-
-      @keyframes bounce {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
+    animation: bounce 1s infinite;
   }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .img-whatsapp:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+      
+  
      
+
+ 
 
  h2 {
   font-size: 18px;

@@ -86,6 +86,12 @@ nav {
 
   /* ---------------------- TIENDA ---------------------- */
   .tienda-pag{
+  main{
+    .menu-completo{
+     margin-left: 0;
+     width: 90%;
+    }
+  }
   .tienda-container {
     grid-template-columns: 1fr;
     padding: 10px;
@@ -119,12 +125,15 @@ nav {
 
 
  /* ---------------------- CONTACTO ---------------------- */
-
-
-
-
-
-
+  .contacto-pag{
+  main{
+    div{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  }
 
   /* ---------------------- FOOTER ---------------------- */
   footer {

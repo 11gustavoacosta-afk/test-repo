@@ -46,70 +46,14 @@ footer .img-whatsapp {
     transform: translateY(-20px);
   }
 }
+footer .img-whatsapp:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
 footer h2 {
   font-size: 18px;
   font-weight: 500;
   margin: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  background-color: beige;
-}
-
-main {
-  padding: 20px;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  background-color: white;
-  text-orientation: sideways;
-}
-main li {
-  list-style: disc;
-}
-main img {
-  display: block;
-  margin-right: 40vw;
-  transition: width 0.5s, height 0.5s;
-}
-main .txt-choto {
-  margin-right: 500px;
-  margin-left: 20px;
-}
-main .img-fluid {
-  width: 37vw;
-  height: 47vh;
-  display: block;
-  margin: 10px;
-  transition: width 1s, height 1s;
-  margin-left: auto;
-  margin-right: 40%;
-}
-main .img-fluid:hover {
-  width: 47vw;
-  height: 57vh;
-}
-main .img-fluid:active {
-  transform: scale(1.05);
-}
-main .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 10px;
-  margin-left: 0%;
-  margin-right: 20%;
-}
-main .producto-tienda {
-  border: 2px solid black;
-  border-radius: 25px;
-  align-items: center;
-}
-main .img-tienda, main .img-galeria {
-  width: 20vw;
-  height: 30vh;
-  margin: 10px;
 }
 
 /* Estilos para la barra lateral de navegación */
@@ -192,6 +136,61 @@ nav ul li:hover {
   transition: width 0.5s ease;
 }
 
+.tienda-pag main .txt-choto {
+  margin-right: 20%;
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+}
+.tienda-pag main .menu-completo {
+  margin-left: 20%;
+  width: 600px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  /*Solo visual, no funciona realmente*/
+}
+.tienda-pag main div {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.tienda-pag main h3.envios-tienda {
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  margin-right: 20%;
+}
+.tienda-pag main .pedidosya-ul {
+  display: flex;
+  border: 2px solid black;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-right: 20%;
+}
+.tienda-pag main .pedidosya-ul li {
+  list-style: none;
+  margin: 0px;
+}
+.tienda-pag main .pedidosya-ul .txt-choto {
+  margin: 0px;
+}
+.tienda-pag main .pedidosya-ul .img-pedido-ya {
+  width: 100px;
+  height: auto;
+  margin-right: 0px;
+  animation: giro 2.5s linear infinite;
+}
+@keyframes giro {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .tienda-pag .tienda-item {
   text-align: center;
 }
@@ -228,6 +227,66 @@ nav ul li:hover {
   font-weight: 500;
   color: #333333;
   align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: beige;
+}
+
+main {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  background-color: white;
+  text-orientation: sideways;
+}
+main li {
+  list-style: disc;
+}
+main img {
+  display: block;
+  margin-right: 40vw;
+  transition: width 0.5s, height 0.5s;
+}
+main .txt-choto {
+  margin-right: 500px;
+  margin-left: 20px;
+}
+main .img-fluid {
+  width: 37vw;
+  height: 47vh;
+  display: block;
+  margin: 10px;
+  transition: width 1s, height 1s;
+  margin-left: auto;
+  margin-right: 40%;
+}
+main .img-fluid:hover {
+  width: 47vw;
+  height: 57vh;
+}
+main .img-fluid:active {
+  transform: scale(1.05);
+}
+main .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+  margin-left: 0%;
+  margin-right: 20%;
+}
+main .producto-tienda {
+  border: 2px solid black;
+  border-radius: 25px;
+  align-items: center;
+}
+main .img-tienda, main .img-galeria {
+  width: 20vw;
+  height: 30vh;
+  margin: 10px;
 }
 
 @media (max-width: 768px) {
@@ -301,6 +360,10 @@ nav ul li:hover {
     width: 80vw;
   }
   /* ---------------------- TIENDA ---------------------- */
+  .tienda-pag main .menu-completo {
+    margin-left: 0;
+    width: 90%;
+  }
   .tienda-pag .tienda-container {
     grid-template-columns: 1fr;
     padding: 10px;
@@ -318,6 +381,11 @@ nav ul li:hover {
   }
   /* ---------------------- NOSOTROS ---------------------- */
   /* ---------------------- CONTACTO ---------------------- */
+  .contacto-pag main div {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   /* ---------------------- FOOTER ---------------------- */
   footer {
     margin: 0;
