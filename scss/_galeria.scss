@@ -10,6 +10,8 @@ main{
       height: 30vh;
       margin: 10px;
       @include transition(width);
+
+      
 }
 }
 }
