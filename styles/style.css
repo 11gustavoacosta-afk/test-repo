@@ -136,10 +136,11 @@ nav ul li:hover {
   transition: width 0.5s ease;
 }
 
-.tienda-pag main .txt-choto {
+.tienda-pag main .txt {
   margin-right: 20%;
   font-family: "Roboto Slab", serif;
   font-size: 24px;
+  margin: 0;
 }
 .tienda-pag main .menu-completo {
   margin-left: 20%;
@@ -172,9 +173,6 @@ nav ul li:hover {
 }
 .tienda-pag main .pedidosya-ul li {
   list-style: none;
-  margin: 0px;
-}
-.tienda-pag main .pedidosya-ul .txt-choto {
   margin: 0px;
 }
 .tienda-pag main .pedidosya-ul .img-pedido-ya {
@@ -259,7 +257,7 @@ main img {
   display: block;
   margin-right: 40vw;
 }
-main .txt-choto {
+main .txt {
   margin-right: 500px;
   margin-left: 20px;
 }
@@ -345,7 +343,7 @@ main .img-tienda, main .img-galeria {
     width: 95vw;
     height: auto;
   }
-  main .txt-choto {
+  main .txt {
     margin-right: 0;
     margin-left: 0;
   }

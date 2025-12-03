@@ -7,10 +7,11 @@
 
 .tienda-pag{
  main{
-  .txt-choto{
+  .txt{
     margin-right: 20%;
     font-family: $font-tienda;
     font-size: 24px;
+    margin: 0;
   }
   .menu-completo{
    margin-left: 20%;
@@ -43,9 +44,6 @@
   
   li{
     list-style: none;
-    margin: 0px;
-  }
-  .txt-choto{
     margin: 0px;
   }
   .img-pedido-ya {
