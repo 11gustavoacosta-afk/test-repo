@@ -9,10 +9,14 @@ main{
       width: 20vw;
       height: 30vh;
       margin: 10px;
+      @include transition(width);  
+    }
+    .video-youtube {
+      width: 560px;
+      height: 315px;
+      margin: 10px;
       @include transition(width);
-
-      
-}
+    }
 }
 }
       

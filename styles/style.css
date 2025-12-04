@@ -205,6 +205,12 @@ nav ul li:hover {
   margin: 10px;
   transition: width 0.5s ease;
 }
+.galeria-pag main .video-youtube {
+  width: 560px;
+  height: 315px;
+  margin: 10px;
+  transition: width 0.5s ease;
+}
 
 .tienda-pag main {
   background-color: transparent;
@@ -394,8 +400,8 @@ nav ul li:hover {
     width: 70vw;
     height: auto;
   }
-  .galeria-pag main inframe {
-    width: 70%;
+  .galeria-pag main .video-youtube {
+    width: auto;
     height: auto;
   }
   /* ---------------------- NOSOTROS ---------------------- */
