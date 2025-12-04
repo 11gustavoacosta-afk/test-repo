@@ -84,6 +84,10 @@ nav {
 }
   /* ---------------------- TIENDA ---------------------- */
   .tienda-pag{
+      .tienda-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
   main{
     .menu-completo{
      margin-left: 0;
@@ -92,12 +96,6 @@ nav {
     .txt{
       margin-right: 0;
     }
-  }
-  .tienda-container {
-    grid-template-columns: 1fr;
-    padding: 10px;
-  }
-
   .tienda-item {
     .img-tienda {
       max-width: 150px;
@@ -106,6 +104,7 @@ nav {
     .precio {
       font-size: 16px;
     }
+  }
   }
   }
   /* ---------------------- GALERIA ---------------------- */

@@ -5,26 +5,25 @@ body {
   overflow-x: hidden;
   background-color: beige;
 }
-
-main {
+body main {
   padding: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   background-color: white;
   text-orientation: sideways;
 }
-main li {
+body main li {
   list-style: disc;
 }
-main img {
+body main img {
   display: block;
   margin-right: 40vw;
 }
-main .txt {
+body main .txt {
   margin-right: 500px;
   margin-left: 20px;
 }
-main .img-fluid {
+body main .img-fluid {
   width: 37vw;
   height: 47vh;
   display: block;
@@ -33,26 +32,26 @@ main .img-fluid {
   margin-left: auto;
   margin-right: 40%;
 }
-main .img-fluid:hover {
+body main .img-fluid:hover {
   width: 47vw;
   height: 57vh;
 }
-main .img-fluid:active {
+body main .img-fluid:active {
   transform: scale(1.05);
 }
-main .gallery-tienda-elements {
+body main .gallery-tienda-elements {
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 10px;
   margin-left: 0%;
   margin-right: 20%;
 }
-main .gallery-tienda-elements .producto-tienda {
+body main .gallery-tienda-elements .producto-tienda {
   border: 2px solid black;
   border-radius: 25px;
   align-items: center;
 }
-main .gallery-tienda-elements img {
+body main .gallery-tienda-elements img {
   height: 30vh;
   margin: 10px;
 }
@@ -378,6 +377,10 @@ nav ul li:hover {
     width: 80vw;
   }
   /* ---------------------- TIENDA ---------------------- */
+  .tienda-pag .tienda-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
   .tienda-pag main .menu-completo {
     margin-left: 0;
     width: 90%;
@@ -385,14 +388,10 @@ nav ul li:hover {
   .tienda-pag main .txt {
     margin-right: 0;
   }
-  .tienda-pag .tienda-container {
-    grid-template-columns: 1fr;
-    padding: 10px;
-  }
-  .tienda-pag .tienda-item .img-tienda {
+  .tienda-pag main .tienda-item .img-tienda {
     max-width: 150px;
   }
-  .tienda-pag .tienda-item .precio {
+  .tienda-pag main .tienda-item .precio {
     font-size: 16px;
   }
   /* ---------------------- GALERIA ---------------------- */
