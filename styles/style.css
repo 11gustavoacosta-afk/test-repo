@@ -20,7 +20,7 @@ body main img {
   margin-right: 40vw;
 }
 body main .txt {
-  margin-right: 500px;
+  margin-right: 40vw;
   margin-left: 20px;
 }
 body main .img-fluid {
@@ -395,12 +395,15 @@ nav ul li:hover {
     font-size: 16px;
   }
   /* ---------------------- GALERIA ---------------------- */
-  .galeria-pag main .img-galeria {
+  .galeria-pag main div {
+    grid-template-columns: 1fr;
+  }
+  .galeria-pag main div .img-galeria {
     width: 70vw;
     height: auto;
   }
   .galeria-pag main .video-youtube {
-    width: auto;
+    width: 70vw;
     height: auto;
   }
   /* ---------------------- NOSOTROS ---------------------- */

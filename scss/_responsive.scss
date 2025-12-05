@@ -110,13 +110,16 @@ nav {
   /* ---------------------- GALERIA ---------------------- */
   .galeria-pag{
   main{ 
+    div{
+      grid-template-columns: 1fr;
     .img-galeria {
       width: 70vw;
       height: auto;
     }
+  }
     .video-youtube {
-      width: auto;
-      height: auto;
+      width: 70vw;
+      height: auto
     }
   }
   }
